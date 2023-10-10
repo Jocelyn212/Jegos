@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div style="display: flex; align-items: center">
+      <h1>
+        <img
+          src="./imagenes/Nintendo.svg-removebg-preview.png"
+          alt="logo"
+          style="width: 220px; height: 100px"
+        />
+      </h1>
+      <nav style="margin-left: auto">
+        <div style="display: flex; align-items: center">
+          <a href="./index.html">Inicio</a>
+          <img
+            src="./imagenes/Group_corazon.png"
+            alt=""
+            style="width: 30px; height: 30px; margin-right: 5px"
+          />
+          <a href="./favoritos.html">Favoritos</a>
+        </div>
+      </nav>
+    </div>
+    <!-- prueba modal -->
+    <div style="text-align: left; margin: auto">
+      <input type="text" placeholder="Busca tu juego" id="juegoBuscar" />
+      <button onclick="buscar()">Buscar</button>
+<div id="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+  <div style="background-color: rgba(255, 123, 123, 0.924); margin: 50px auto; padding: 20px; width: 80%;">
+    <!-- <div id="modal-content"></div> -->
+    <div id="modal-content" style="display: flex; flex-wrap: wrap;justify-content: center;"></div>
+    <div style="text-align: center;">
+      <button onclick="cerrarModal()">Cerrar</button>
+    </div>
+  </div>
+</div>
+<!-- prueba ventana emergente -->
+<div id="mensaje"></div>
+    <hr />
+    <!--  videos -->
+    <div>
+      <iframe
+        width="440"
+        height="215"
+        src="https://www.youtube.com/embed/QLbZxMDHqdQ?start=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        width="440"
+        height="215"
+        src="https://www.youtube.com/embed/ROZowexd4bE?start=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        width="440"
+        height="215"
+        src="https://www.youtube.com/embed/L3E1SrHIgrQ?start=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!-- box de imagenes  -->
+    <div style="display: flex">
+      <div>
+        <div style="width: 400px; height: 500px; margin: 15px">
+          <img
+            src="https://www.vanguardia.com/binrepository/1501x1531/0c0/0d0/none/12204/KPHU/videosjuegos-nintendo_8283616_20230509103347.jpg"
+            alt="Zelda"
+            style="width: 400px; height: 500px"
+          />
+        </div>
+        <div style="width: 300px; height: 500px; margin: 15px">
+          <img
+            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_700/dpr_2.0/ncom/en_US/switch/site-design-update/hardware-hero-combo"
+            alt=""
+            style="width: 400px; height: 400px"
+          />
+        </div>
+        <!-- Mostrar card de juegos  -->
+      </div>
+      <div id="div1"></div>
+    </div>
+    <!-- formulario añadir juego -->
+    <div>
+      <h3 style="color: rgb(249, 246, 240)">Añade tu VideoJuego</h3>
+      <input type="text" placeholder="Título del juego" id="titulo" />
+      <input type="text" placeholder="genero" id="genero" />
+      <input type="text" placeholder="Plataforma" id="plataforma" />
+      <input type="text" placeholder="Imagen" id="img" />
+      <button onclick="insertarJuego()">Añadir</button>
+    </div>
+<footer style="background-color: #333; color: white; padding: 10px;margin: 10px; text-align: center;">
+  <p> Todos los Derechos Reservados, son para mi 😛 © 2023</p>
+  <h4>JCF</h4>
+</footer>
+
+      <script src="./demo.js"></script>
+  </body>
+</html>

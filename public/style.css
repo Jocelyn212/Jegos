@@ -1,0 +1,113 @@
+body{
+    background-color: #EF1616;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    text-align: right;
+    padding: 10px 0px 0px 20px;
+    margin: solid 1px black;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f6f6f6;
+  margin-right: 15px;
+  font-size: 18px;
+}
+iframe {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f2f2f2;
+}
+ #div1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+    color: #f6f6f6;
+    text-align: center;
+    border-radius: 3px ;
+    border: 1px solid #f6f6f6;
+ }
+
+#favoritos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    color: #f6f6f6;
+    text-align: center;
+    border:solid 1px #f6f6f6;
+   
+}
+button {
+  background-color: rgb(236, 50, 50);
+  color:white;
+  width: 150px;
+  height: 30px;
+  margin: 5px;
+}
+button:hover {
+  /* Cambia el color de fondo al poner el cursor encima */
+  background-color: rgb(252, 141, 89);
+  /* Cambia el color del texto al poner el cursor encima */
+  color: white;
+}
+input[type="text"] {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+ 
+ .card {
+    margin: 15px;
+    padding: 20px;
+    color: #ea2e2e;
+    text-align: center;
+    border-radius: 3px ;
+    background-color: #f2f2f2;
+  
+  }
+
+   /*  Estilos para el mensaje de agragar a favoritos  */
+    #mensaje {
+      display: none;
+      position: fixed;
+      text-align: center;
+      color: rgb(250, 0, 0);
+      font-size: 20px;
+      bottom: 30px;
+      right: 20px;
+      top: 50%;
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      background-color: rgb(0, 0, 0);
+      padding: 10px;
+      border: 1px solid rgb(250, 0, 0);
+      border-radius: 10px;
+      animation: float-up 5s forwards;
+      width: 160px;
+      height: 50px;
+    }
+    
+    @keyframes float-up {
+      from {
+        bottom: 20px;
+        opacity: 1;
+      }
+      
+      to {
+        bottom: 100px;
+        opacity: 0;
+      }
+    }
+    
+  

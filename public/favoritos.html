@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div style="display: flex; align-items: center">
+      <h1>
+        <img
+          src="./imagenes/Nintendo.svg-removebg-preview.png"
+          alt="logo"
+          style="width: 220px; height: 100px"
+        />
+      </h1>
+      <nav style="margin-left: auto">
+        <div style="display: flex; align-items: center">
+          <a href="./index.html">Inicio</a>
+          <img
+            src="./imagenes/Group_corazon.png"
+            alt=""
+            style="width: 30px; height: 30px; margin-right: 5px"
+          />
+          <a href="./favoritos.html">Favoritos</a>
+        </div>
+      </nav>
+    </div>
+    <h1 style="color: aliceblue; text-align: center">
+      <img
+        src="https://media.tenor.com/TXvRhScltzEAAAAj/star-rainbow.gif"
+        alt="gif"
+        style="width: 50px; height: 50px"
+      />
+      Lista de Favoritos
+    </h1>
+    <img
+      src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2015/09/Super-MarioBros-Faves.gif?fit=640%2C360&quality=80&ssl=1"
+      alt=""
+      style="width: 180px; height: 80px"
+    />
+    <hr />
+    <!-- card con los favoritos -->
+    <div id="favoritos"></div>
+    <!-- Formulario para editar la card de los favoritos  -->
+    <div>
+      <h3 style="color: rgb(249, 246, 240)">Edita tu Video Juego</h3>
+      <input type="text" placeholder="Título del juego" id="tituloEditar" />
+      <input type="text" placeholder="genero" id="generoEditar" />
+      <input type="text" placeholder="Plataforma" id="plataformaEditar" />
+      <input type="text" placeholder="Imagen" id="imgEditar" />
+      <button onclick="editar()">Editar</button>
+     
+    </div>
+    <!--  Boton para volver a la pagina principal -->
+   <div style="text-align: center;">
+    <a href="./index.html"><button>Volver</button></a>
+  </div>
+  <!-- footer -->
+<footer style="background-color: #333; color: white; padding: 10px; text-align: center; margin: 10px;">
+  <p> Todos los Derechos Reservados, son para mi 😛 © 2023</p>
+  <h4>JCF</h4>
+</footer>
+
+    <script src="./demo.js"></script>
+  </body>
+</html>
